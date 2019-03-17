@@ -15,6 +15,7 @@
 		146C8CFD223E32EC003BE851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146C8CFB223E32EC003BE851 /* Main.storyboard */; };
 		146C8CFF223E32F4003BE851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146C8CFE223E32F4003BE851 /* Assets.xcassets */; };
 		146C8D02223E32F4003BE851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146C8D00223E32F4003BE851 /* LaunchScreen.storyboard */; };
+		146C8D16223E354F003BE851 /* SwiftAutolayoutLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146C8D15223E354F003BE851 /* SwiftAutolayoutLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		146C8CFE223E32F4003BE851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		146C8D01223E32F4003BE851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		146C8D03223E32F4003BE851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		146C8D15223E354F003BE851 /* SwiftAutolayoutLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAutolayoutLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				146C8CDA223E3244003BE851 /* SwiftAutolayoutLib.h */,
 				146C8CDB223E3244003BE851 /* Info.plist */,
+				146C8D15223E354F003BE851 /* SwiftAutolayoutLib.swift */,
 			);
 			path = SwiftAutolayoutLib;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					146C8CD6223E3244003BE851 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					146C8CDF223E3245003BE851 = {
 						CreatedOnToolsVersion = 10.1;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				146C8D16223E354F003BE851 /* SwiftAutolayoutLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		146C8CEC223E3245003BE851 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = seanlin.SwiftAutolayoutLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		146C8CED223E3245003BE851 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -485,6 +493,7 @@
 		146C8CEF223E3245003BE851 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C8CYW7DN6;
 				INFOPLIST_FILE = SwiftAutolayoutLibTests/Info.plist;
@@ -503,6 +512,7 @@
 		146C8CF0223E3245003BE851 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C8CYW7DN6;
 				INFOPLIST_FILE = SwiftAutolayoutLibTests/Info.plist;
