@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UIView {
+public extension UIView {
     
     func fillSuperview() {
         anchor(top: superview?.topAnchor, leading: superview?.leadingAnchor, bottom: superview?.bottomAnchor, trailing: superview?.trailingAnchor)

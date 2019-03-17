@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         let myView = UIView()
         myView.backgroundColor = .red
         view.addSubview(myView)
+        myView.fillSuperview()
     }
 
 
