@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import SwiftAutolayoutLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let myView = UIView()
+        myView.backgroundColor = .red
+        view.addSubview(myView)
     }
 
 
