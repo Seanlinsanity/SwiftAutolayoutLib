@@ -2,6 +2,8 @@ language: objective-c
 
 osx_image: xcode10.1
 env:
+  global:
+    -CODECOV_TOKEN='81524d67-14b6-483e-88f3-73643e370ca0'
   matrix:
     - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone XR'
     - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone 7'
