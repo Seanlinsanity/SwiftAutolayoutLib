@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: SwiftAutolayoutLib.xcodeproj
+scheme: SwiftAutolayoutLib
+output_directory: reports
+ignore:
+  - SwiftAutolayoutLibTest/*
