@@ -12,5 +12,6 @@ script:
   - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project SwiftAutolayoutLib.xcodeproj -scheme SwiftAutolayoutLib -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
 
 after_success:
+  - bash <(curl -s https://codecov.io/bash) -t '81524d67-14b6-483e-88f3-73643e370ca0'
   - slather
   - bash <(curl -s https://codecov.io/bash) -f reports/cobertura.xml -X coveragepy -X gcov -X xcode
